@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">wireframe</string>
+    <string name="login">Log in to Your Account</string>
+    <string name="loginbutton">Log In</string>
+    <string name="masukkan_nama">Username</string>
+    <string name="password">Password</string>
+    <string name="percobaan">batas mencoba</string>
+    <string name="cancel">batal</string>
+    <string name="developer">Tugas UTS By Kelompok 7</string>
+    <string name="greeting">SELAMAT DATANG</string>
+    <string name="fade">FADE</string>
+    <string name="clockwise">ROTATE</string>
+    <string name="move">MOVE</string>
+    <string name="slide">SLIDE</string>
+    <string name="stop_animation">STOP ANIMTAION</string>
+    <string name="orloginwith">Or login with</string>
+    <string name="signup">Don\'t have an account? Sign up</string>
+</resources>
