@@ -39,7 +39,12 @@ public class LoginActivity extends AppCompatActivity {
                     ed2.getText().toString().equals("praktikum")) {
                 Toast.makeText(getApplicationContext(),
                         "Yeyy..Berhasil...",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoadingLoginActivity.class));
+            }else if(ed1.getText().toString().equals("admin") &&
+                    ed2.getText().toString().equals("admin")) {
+                Toast.makeText(getApplicationContext(),
+                        "Admin Mode...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), AdminActivity.class));
             }else{
                 Toast.makeText(getApplicationContext(), "Gagal ygy, coba lagi anda kurang beruntung",Toast.LENGTH_SHORT).show();
 
