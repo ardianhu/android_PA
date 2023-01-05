@@ -15,4 +15,8 @@
     <string name="stop_animation">STOP ANIMTAION</string>
     <string name="orloginwith">Or login with</string>
     <string name="signup">Don\'t have an account? Sign up</string>
+    <string-array name="spinnerUserType">
+        <item>admin</item>
+        <item>user</item>
+    </string-array>
 </resources>
