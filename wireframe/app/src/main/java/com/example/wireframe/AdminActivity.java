@@ -34,6 +34,7 @@ public class AdminActivity extends AppCompatActivity {
 
                 if (userName.isEmpty() && userPassword.isEmpty()){
                     Toast.makeText(AdminActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
+                    return;
                 }
                 dbHandler.addNewUser(userName, userPassword);
 

@@ -1,196 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/menu"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/secondaryColor">
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="11dp">
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:padding="10dp">
             <TextView
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_gravity="center"
-                android:gravity="center_horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:text="Boophilia"/>
-            <RelativeLayout
-                android:layout_width="30sp"
-                android:layout_height="match_parent"/>
-            <Button
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:drawableLeft="@drawable/ic_cari"
-                android:textColor="@color/black"
-                android:textAllCaps="false"
-                android:text="Cari sesuatu..."
-                android:backgroundTint="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <RelativeLayout
-                android:layout_width="15sp"
-                android:layout_height="match_parent"/>
-
-
+                android:text="Semua"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Fiqh"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Tafsir"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Nahwu"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Tasrif"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Anak"/>
         </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
-    <LinearLayout
+    </HorizontalScrollView>
+    <GridView
+        android:id="@+id/grid_view"
         android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:background="@drawable/box"
-        android:layout_margin="10sp">
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="5sp">
-                <FrameLayout
-                    android:layout_width="85sp"
-                    android:layout_height="85sp"
-                    android:layout_marginHorizontal="5sp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/whitebox">
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:src="@drawable/buku1"
-                        android:layout_gravity="center"/>
-                </FrameLayout>
-                <FrameLayout
-                    android:layout_width="85sp"
-                    android:layout_height="85sp"
-                    android:layout_marginHorizontal="5sp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/whitebox">
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:src="@drawable/buku"
-                        android:layout_gravity="center"/>
-                </FrameLayout>
-                <FrameLayout
-                    android:layout_width="85sp"
-                    android:layout_height="85sp"
-                    android:layout_marginHorizontal="5sp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/whitebox">
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:src="@drawable/buku2"
-                        android:layout_gravity="center"/>
-                </FrameLayout>
-                <FrameLayout
-                android:layout_width="85sp"
-                android:layout_height="85sp" android:layout_marginHorizontal="5sp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/whitebox">
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:src="@drawable/buku3"
-                    android:layout_gravity="center"/>
-            </FrameLayout>
-                <FrameLayout
-                    android:layout_width="85sp"
-                    android:layout_height="85sp"
-                    android:layout_marginHorizontal="5sp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/whitebox">
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:src="@drawable/buku4"
-                        android:layout_gravity="center"/>
-                </FrameLayout><FrameLayout
-                android:layout_width="85sp"
-                android:layout_height="85sp"
-                android:layout_marginHorizontal="5sp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/whitebox">
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:src="@drawable/buku"
-                    android:layout_gravity="center"/>
-            </FrameLayout><FrameLayout
-                android:layout_width="85sp"
-                android:layout_height="85sp"
-                android:layout_marginHorizontal="5sp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/whitebox">
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:src="@drawable/buku1"
-                    android:layout_gravity="center"/>
-            </FrameLayout>
-            </LinearLayout>
-        </HorizontalScrollView>
-
-    </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="320sp"
-        android:layout_margin="10sp"
-        android:background="@drawable/anotherbox">
-
-        <ImageView
-            android:layout_width="200sp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="33dp"
-            android:layout_marginBottom="35dp"
-            android:src="@drawable/buku"
-            android:id="@+id/gambar"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/gambar"
-            android:layout_marginStart="10sp"
-            android:orientation="vertical"
-            android:layout_marginTop="30sp">
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            android:text="Atomic Habits" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="James Clear" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20sp"
-                android:text="Buku ini adalah salah satu buku pengembangan diri yang sangat populer di kalangan anak muda."/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Beli"
-                android:layout_marginTop="10sp"
-                android:onClick="proses"
-                android:backgroundTint="@color/secondaryColor"/>
-        </LinearLayout>
-    </RelativeLayout></LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"/>
+</LinearLayout>
