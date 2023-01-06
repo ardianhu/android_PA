@@ -2,6 +2,7 @@ package com.example.wireframe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     Button b1;
     EditText ed1,ed2;
+    private DBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         ed1 = findViewById(R.id.editText);
         ed2 = findViewById(R.id.editText2);
 
-
         b1.setOnClickListener(v -> {
+
+
+
             if(ed1.getText().toString().equals("ardian") &&
                     ed2.getText().toString().equals("praktikum")) {
                 Toast.makeText(getApplicationContext(),
