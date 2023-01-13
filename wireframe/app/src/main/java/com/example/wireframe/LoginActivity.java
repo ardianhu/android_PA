@@ -39,8 +39,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-            if(ed1.getText().toString().equals("ardian") &&
-                    ed2.getText().toString().equals("praktikum")) {
+            if(ed1.getText().toString().equals("user") &&
+                    ed2.getText().toString().equals("user")) {
                 Toast.makeText(getApplicationContext(),
                         "Yeyy..Berhasil...",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), LoadingLoginActivity.class));

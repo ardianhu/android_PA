@@ -43,9 +43,17 @@ public class HomeActivity extends AppCompatActivity {
         gridView = findViewById(R.id.grid_view);
         gridView.setAdapter(gridViewCustom);
 
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                if(position==0){
+                    Intent intent = new Intent(HomeActivity.this, ExpandActivity.class);
+                    startActivity(intent);
+                }else if(position==1){
+                    Intent intent = new Intent(HomeActivity.this, ExpandActivity2.class);
+                    startActivity(intent);
+                }
                 Toast.makeText(HomeActivity.this, "" + Headline[+position], Toast.LENGTH_SHORT).show();
 
             }

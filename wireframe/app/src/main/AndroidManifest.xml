@@ -60,6 +60,11 @@
 
         </activity>
         <activity
+            android:name=".ExpandActivity2"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".GridViewCustom"
             android:exported="true">
 

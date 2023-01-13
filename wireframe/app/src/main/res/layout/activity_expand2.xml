@@ -5,50 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ExpandActivity">
+    tools:context=".ExpandActivity2">
     <Button
-        android:id="@+id/back"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:id="@+id/back"
         android:background="@drawable/back"
         android:layout_margin="15sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:src="@drawable/at"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="30dp"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="250dp"
-                android:src="@drawable/ah"
-                android:scaleType="centerCrop"
-                android:layout_marginLeft="30dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20sp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Al - Hakim"
-                    android:textSize="30dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Unknown"
-                    android:textSize="20dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Unknown"
-                    android:textSize="20dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="06 Juli 2007"
-                    android:textSize="15dp"
-                    android:layout_marginTop="120sp"/>
-            </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At - Tirmidzi"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imam At-Tirmidzi"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26 September 2008"
+                android:textSize="15dp"
+                android:layout_marginTop="120sp"/>
         </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         <Button
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:text="Read"
+            android:text="Buy Rp. 69.999,00"
             android:textAllCaps="false"
             android:background="@drawable/button"
             android:textSize="15dp"/>
